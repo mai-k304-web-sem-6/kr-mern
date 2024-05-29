@@ -1,0 +1,35 @@
+### Взять все посты
+GET /posts HTTP/1.1
+Host: localhost:5000
+
+### Взять пост по id
+GET /post/6657210bf570792ca224d07b HTTP/1.1
+Host: localhost:5000
+
+### Удалить пост
+DELETE /post/665730aaa7f5e454897ceaa5 HTTP/1.1
+Host: localhost:5000
+
+### Создать пост
+POST /post HTTP/1.1
+Host: localhost:5000
+Content-Type: application/json
+Content-Length: 101
+
+{
+    "title": "2q rg пост",
+    "text": "Данный пggggост ww тестовым",
+    "imageUrl": "localhost:5000/uploads/browser_cqkl4dsXN8.png"
+}
+
+### Изменить пост
+PATCH /post/665732137f5d2536ea623f31 HTTP/1.1
+Host: localhost:5000
+Content-Type: application/json
+Content-Length: 101
+
+{
+  "title": "2q yt пост",
+  "text": "Данный пggggост gg тестовым",
+  "imageUrl": ""
+}
